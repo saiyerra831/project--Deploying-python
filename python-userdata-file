@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo apt update
+sudo apt upgrade
+sudo apt full-upgrade
+sudo apt-get install python3-pip -y
+sudo git clone https://github.com/krishnanaidu99/flight-perdiction.git
+cd flight-perdiction/
+sudo pip3 install -r requirements.txt
+sudo python3 app.py
+sudo screen -m -d python3 app.py
